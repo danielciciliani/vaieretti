@@ -2,11 +2,610 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale = 1, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta name="description" content="Grupo Vaieretti">
+    <meta name="keywords" content="Grupo Vaieretti">
+    <meta name="author" content="">
+    <title>Vaieretti Desarrollos Inmobiliarios</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">    
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/v4-shims.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+    <!-- MAIN -->
+    <main>
+        <div class="mainimage">
+            <div class="maintitle">
+                <h1 class="title">Grupo Vaieretti</h1>
+                <p class="subtitle">DESARROLLOS INMOBILIARIOS</p>
+            </div>
+        </div>
+    </main>
+    <!-- NOSOTROS -->
+    <section class="nosotros">
+        <div class="jumbotron" style="margin-bottom: 0px;" >
+            <div class="text1">
+                <h2 class="title1">Construí con todo. Y todo al mejor precio.</h2>
+                <p>Proyectamos futuro, construimos nuevos sueños. Con todo lo que se necesita para llevar adelante la construcción.</p>
+            </div>
+        </div>
+        <div style="text-align: center;">
+            <div class="imageNosotros"></div>
+        </div>
+    </section>
+    <!-- PRECIOS -->
+    <section class="precios">
+        <div class="jumbotron">
+            <div class="text2">
+                    <h2 class="title1">Precios directos sin intermediarios.</h2>
+                    <p></p>
+            </div>
+        </div>
+        <div class="imagePrecios"></div>
+    </section>
+    <!-- COMPROMISO -->
+    <section class="nuestroCompromiso">
+        <div class="jumbotron text2" style="margin-bottom: 0px;">
+            <p><strong>Nuestro compromiso empresario es edificar confianza, es construir solidez.</strong> Y llegar con soluciones para lograr una vivienda 100% de material, 100% terminada.<br>Grupo Vaieretti te ofrece:</p>
+            <div class="list">
+                <ul>
+                    <li>Fábrica de hormigón elaborado.</li>
+                    <li>Planta de áridos de anchoris.</li>
+                    <li>Fábrica de ladrillos.</li>
+                    <li>Taller metalúrgico propio.</li>
+                    <li>Fábrica de aberturas de aluminio, DVH.</li>
+                    <li>Fábrica de amoblamientos de cocina y dormitorio.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- GALERIA DE IMAGENES -->
+    <section class="imageGallery">
+        <!-- <div>
+            grid de imagenes con flexbox
+            <div class="overlayBackstage" id="overlayBackstage" style="display: none;">
+                    <p class="siguienteOverlay" onclick="next(-1)" style="left: 3%">&lt;</p>
+                    <p class="siguienteOverlay nextR" onclick="next(1)">&gt;</p>
+                    <div class="bacVerticalAlign"></div>
+                    <div class="backstageExpandida" onclick="cerrarOverlayBackstage()">
+                      <p class="cerrarOverlayB" onclick="cerrarOverlayBackstage()">x</p>
+                    <img id="backstageExpandida" src="" style="height: auto; width: 95%;">
+                   </div>
+            </div> -->
+                <div class="imagesPortadas" id="backstages">
+                    <div class="grid">
+                        <div id="backstage0" class="backstage" onclick="abrirBackstage(event)" style="background-image: url(./images/grid1.jpg);"></div>
+                        <div id="backstage1" class="backstage" onclick="abrirBackstage(event)" style="background-image: url(./images/grid2.jpg);"></div>
+                        <div id="backstage2" class="backstage" onclick="abrirBackstage(event)" style="background-image: url(./images/grid3.jpg);"></div>
+                        <div id="backstage3" class="backstage" onclick="abrirBackstage(event)" style="background-image: url(./images/grid4.jpg);"></div>
+                        <div id="backstage4" class="backstage" onclick="abrirBackstage(event)" style="background-image: url(./images/grid5.jpg);"></div>
+                        <div id="backstage5" class="backstage" onclick="abrirBackstage(event)" style="background-image: url(./images/grid6.jpg);"></div>
+                        <div id="backstage6" class="backstage" onclick="abrirBackstage(event)" style="background-image: url(./images/grid7.jpg); width: 100%; height:50vh;"></div>
+                    </div>
+                </div>
+        <div>
+            <!-- imagen centrada -->
+        </div>
+    </section>
+    <!-- MAS INFORMACION -->
+    <div class="botones">
+        <div class="botonInfo">
+                <input type="submit" class="boton1" value="Solicitá más información" onclick="Enviar()">
+        </div>
+    </div>
+    <!-- CONTA CON VAIERETT -->
+    <section>
+        <div class="conta">
+            <h2 class="">Contá con Vaieretti, contá con todo.</h2>
+            <p class="">Desde los cimientos hasta los muebles de tu futura casa.</p>
+        </div>
+    </section>
+
+
+
 </body>
+<script>
+
+window.scrollTo(0,0);
+  var  capaOverlay=0;
+  window.addEventListener('scroll', Scroll);
+
+  function Scroll(){
+  if(window.scrollY>600){
+    if(apiready==1){
+    player.pauseVideo();
+  }
+
+  }
+  if(window.scrollY<600 && capaOverlay==0 && bowser.name!='Safari'){
+    if(apiready==1){
+    player.playVideo();
+  }
+  }
+}
+	var idContent = 0;
+
+  var portadas=["aert_opt/_MG_0497_opt.jpg","musica_opt/plus37_opt.jpg","nature_opt/DSC07228_opt.jpg","reporter_opt/_MG_7230_opt.jpg", "RitualPachamama_opt/ceremonia_1_opt.jpg", "fotogramas_opt/camas2_opt.jpg", "retratos_opt/_MG_4053_opt.jpg"];
+
+  var textoPortadas=["ART", "MUSICA", "NATURE", "REPORTER", "RITUALES", "FOTOGRAMAS", "RETRATOS"];
+
+
+for (var i = 0; i < portadas.length; i++) {
+  console.log(i);
+  var portada = document.createElement('DIV');
+  portada.className = 'portada';
+  portada.id = 'portada'+i;
+  portada.style.backgroundImage = 'url(imagenes/'+portadas[i]+')';
+  portada.style.backgroundRepeat = 'no-repeat';
+  portada.style.backgroundSize = 'cover';
+  portada.style.height = '180px';
+  if(i==3){
+    portada.style.width = '94.5%';
+  }
+  portada.setAttribute("onclick","abrirFoto(event)");
+  portada.setAttribute("onclick","abrirFoto(event)");
+  portada.setAttribute("onmouseover", "mostrarTexto(event)");
+  if(window.innerWidth>1024){
+      portada.setAttribute("onmouseout", "ocultarTexto(event)");
+  }
+  
+  document.getElementById('portadas').appendChild(portada);
+  var containerTitle = document.createElement('DIV');
+  containerTitle.className = 'containerTitle';
+  containerTitle.id = 'containerTitle'+i;
+  portada.appendChild(containerTitle);
+  var nuevoTitulo = document.createElement('P');
+  nuevoTitulo.innerHTML = textoPortadas[i];
+  nuevoTitulo.id = 'contentTextttt'+i;
+  nuevoTitulo.style.paddingTop = '130px';
+  nuevoTitulo.className = 'contentText1';
+  containerTitle.appendChild(nuevoTitulo);
+  var nuevoTitulo = document.createElement('P');
+  nuevoTitulo.innerHTML = "ARIEL LARRIBA";
+  nuevoTitulo.className = 'contentText1';
+  nuevoTitulo.id = 'contentTextttt'+i;
+  containerTitle.appendChild(nuevoTitulo);
+}
+
+
+    var fotos=[["aert_opt/_MG_0497_opt.jpg","aert_opt/_MG_1747_opt.jpg","aert_opt/_MG_1759_opt.jpg","aert_opt/_MG_1789_opt.jpg","aert_opt/_MG_2040_opt.jpg","aert_opt/_MG_2063_opt.jpg","aert_opt/_MG_2131_opt.jpg","aert_opt/_MG_2791_opt.jpg","aert_opt/_MG_2953_opt.jpg","aert_opt/_MG_4110_opt.jpg",
+        "aert_opt/_MG_5943_opt.jpg","aert_opt/_MG_5977_opt.jpg","aert_opt/_MG_6084_opt.jpg","aert_opt/_MG_6139_opt.jpg","aert_opt/_MG_6179_opt.jpg","aert_opt/_MG_7290_opt.jpg","aert_opt/camas4_opt.jpg",
+        "aert_opt/DSC00056_opt.jpg","aert_opt/DSC00139_opt.jpg","aert_opt/DSC00170_opt.jpg","aert_opt/DSC01009-2_opt.jpg","aert_opt/DSC01719_opt.jpg","aert_opt/DSC01863_opt.jpg",
+        "aert_opt/DSC01874_opt.jpg","aert_opt/DSC01875_opt.jpg","aert_opt/DSC01992_opt.jpg","aert_opt/DSC02154_opt.jpg","aert_opt/DSC02884_opt.jpg","aert_opt/DSC04656_opt.jpg","aert_opt/DSC04709_opt.jpg","aert_opt/DSC05016_opt.jpg","aert_opt/DSC08604_opt.jpg",
+        "aert_opt/fabrica3_opt.jpg","aert_opt/pru_degradado 2_opt.jpg","aert_opt/prueba4_opt.jpg"
+    ],
+    
+    ["musica_opt/_MG_8040_opt.jpg","musica_opt/_MG_9636_opt.jpg","musica_opt/_MG_9676_opt.jpg","musica_opt/vero_6_opt.jpg"],
+   
+    ["nature_opt/_MG_1689_opt.jpg","nature_opt/_MG_1880_opt.jpg","nature_opt/_MG_2048_opt.jpg","nature_opt/_MG_2104_opt.jpg","nature_opt/_MG_3404_opt.jpg","nature_opt/_MG_3425_opt.jpg","nature_opt/_MG_5619_opt.jpg","nature_opt/_MG_7718-2_opt.jpg",
+    "nature_opt/_MG_9491_opt.jpg","nature_opt/_MG_9687_opt.jpg","nature_opt/_MG_9689_opt.jpg","nature_opt/_MG_9691_opt.jpg","nature_opt/_MG_9739_opt.jpg","nature_opt/_MG_9742_opt.jpg","nature_opt/_MG_9752_opt.jpg","nature_opt/_MG_9768_opt.jpg",
+    "nature_opt/DSC07008_opt.jpg","nature_opt/DSC07017_opt.jpg","nature_opt/DSC07024_opt.jpg","nature_opt/DSC07027_opt.jpg","nature_opt/DSC07030_opt.jpg","nature_opt/DSC07056_opt.jpg","nature_opt/DSC07218_opt.jpg","nature_opt/DSC07228_opt.jpg",
+    "nature_opt/DSC07276_opt.jpg","nature_opt/DSC07280_opt.jpg","nature_opt/DSC07349_opt.jpg","nature_opt/PACHA_179_opt.jpg","nature_opt/signos_opt.jpg"
+    
+    ],
+    
+     ["reporter_opt/_MG_0154_opt.jpg","reporter_opt/_MG_0943_opt.jpg","reporter_opt/_MG_0967_opt.jpg","reporter_opt/_MG_1477_opt.jpg","reporter_opt/_MG_2992_opt.jpg","reporter_opt/_MG_7230_opt.jpg","reporter_opt/_MG_9561_opt.jpg","reporter_opt/calsa255_opt.jpg","reporter_opt/calsa369_opt.jpg","reporter_opt/DSC_5376_opt.jpg","reporter_opt/DSC01890_opt.jpg","reporter_opt/DSC02589_opt.jpg","reporter_opt/DSC02667_opt.jpg","reporter_opt/DSC02678_opt.jpg","reporter_opt/DSC02679_opt.jpg","reporter_opt/luna_3_opt.jpg",
+     "reporter_opt/PACHA_158_opt.jpg","reporter_opt/PACHA_180_opt.jpg","reporter_opt/plus17_opt.jpg","reporter_opt/plus32_opt.jpg","reporter_opt/plus36_opt.jpg","reporter_opt/plus39_opt.jpg","reporter_opt/plus42_opt.jpg","reporter_opt/rosario_68_opt.jpg","reporter_opt/rosario_77_opt.jpg","reporter_opt/rosario_147_opt.jpg"
+     ],
+      ["RitualPachamama_opt/ceremonia_1_opt.jpg","RitualPachamama_opt/ceremonia_2_opt.jpg","RitualPachamama_opt/ceremonia_opt.jpg",
+      "RitualPachamama_opt/PACHA_37_opt.jpg","RitualPachamama_opt/PACHA_71_opt.jpg","RitualPachamama_opt/PACHA_73_opt.jpg","RitualPachamama_opt/PACHA_84_opt.jpg","RitualPachamama_opt/PACHA_86_opt.jpg","RitualPachamama_opt/PACHA_108_opt.jpg","RitualPachamama_opt/PACHA_113_opt.jpg","RitualPachamama_opt/PACHA_120_opt.jpg"],
+      
+    ["fotogramas_opt/1_opt.jpg","fotogramas_opt/C0041_1_opt.jpg","fotogramas_opt/C0041_opt.jpg","fotogramas_opt/camas2_opt.jpg","fotogramas_opt/chacarita_5_opt.jpg","fotogramas_opt/chacarita_20_opt.jpg","fotogramas_opt/DSC01009_opt.jpg","fotogramas_opt/DSC04732_opt.jpg","fotogramas_opt/fabrica4_opt.jpg","fotogramas_opt/fotos21_opt.png","fotogramas_opt/fotos24_opt.png","fotogramas_opt/fotos26_opt.png"]
+    
+    ,["retratos_opt/_MG_0996_opt.jpg","retratos_opt/_MG_1163_opt.jpg","retratos_opt/_MG_1803_opt.jpg","retratos_opt/_MG_2800_1_opt.jpg","retratos_opt/_MG_3097_opt.jpg","retratos_opt/_MG_3267_opt.jpg",
+    "retratos_opt/_MG_7999_opt.jpg","retratos_opt/art_opt.jpg","retratos_opt/DSC00066_opt.jpg","retratos_opt/DSC00161_opt.jpg","retratos_opt/DSC01123_opt.jpg","retratos_opt/DSC01137_opt.jpg","retratos_opt/DSC01175_opt.jpg","retratos_opt/DSC01319_opt.jpg","retratos_opt/DSC01371_opt.jpg","retratos_opt/DSC01967_opt.jpg","retratos_opt/DSC02194_2_opt.jpg","retratos_opt/DSC04879_opt.jpg","retratos_opt/DSC04966_opt.jpg","retratos_opt/DSC05003_opt.jpg","retratos_opt/DSC05084_opt.jpg","retratos_opt/DSC05294_opt.jpg",
+    "retratos_opt/FERNANDO ROSAS0_opt.png","retratos_opt/GUILLE RIGATIERI00_opt.png","retratos_opt/JUNTAS_4_opt.jpg","retratos_opt/marchesse8_opt.jpg","retratos_opt/paula9_opt.jpg",
+    ]];
+   for(var l = 0; l < fotos.length; l++){
+    var divTitulo = document.createElement('DIV');
+    divTitulo.id = 'divTitulo'+l;
+    divTitulo.style.display='none';
+    divTitulo.style.fontFamily="DIN-Light, sans-serif;";
+   	var nuevoTitulo = document.createElement('P');
+   	nuevoTitulo.innerHTML=textoPortadas[l];
+   	nuevoTitulo.style.fontSize='1.4em';
+   	nuevoTitulo.style.margin='0px';
+   	nuevoTitulo.style.fontWeight='bold';
+   	nuevoTitulo.style.padding='10px';
+    nuevoTitulo.style.fontFamily='DIN-Light, sans-serif';
+   	divTitulo.appendChild(nuevoTitulo);
+   	var nuevoTitulo = document.createElement('P');
+   	nuevoTitulo.innerHTML='Ariel Larriba';
+   	nuevoTitulo.style.fontSize='1em';
+   	nuevoTitulo.style.margin='0px';
+   	nuevoTitulo.style.padding='0px 10px';
+    nuevoTitulo.style.fontFamily='DIN-Light, sans-serif';
+   	divTitulo.appendChild(nuevoTitulo);
+   	document.getElementById('overlayContent').appendChild(divTitulo);
+    for(var k = 0; k < fotos[l].length;k++){
+    	console.log('k='+k);
+    	var nuevoFotoDetalle= document.createElement('IMG');
+
+  		nuevoFotoDetalle.className = 'fotoDetalle';
+
+  		nuevoFotoDetalle.id = 'fotoDetalle'+l+k;
+
+  		nuevoFotoDetalle.src = "imagenes/"+fotos[l][k];
+
+  		nuevoFotoDetalle.style.display = 'none';
+
+  		document.getElementById('overlayContent').appendChild(nuevoFotoDetalle);
+    }
+}
+var scrollp=0;
+  function abrirFoto(event){
+    capaOverlay=1;
+  	idContent = event.target.id;
+    console.log(idContent+'idContent')
+  	idContent = idContent.substring(14);
+  	console.log(idContent+'idContent');
+    scrollp = window.scrollY;
+  	document.getElementById('overlay').style.display = 'block';
+    window.scrollTo(0,0);
+  	document.getElementById('page').style.display = 'none';
+
+  	for (var i = 0;i<fotos[idContent].length;i++) {
+
+  		document.getElementById('fotoDetalle'+idContent+i).style.display = 'block';
+  	}
+  	document.getElementById('divTitulo'+idContent).style.display = 'block';
+
+  }
+
+  function cerrarOverlay(){
+    capaOverlay=0;
+  	for(var l = 0; l < fotos.length; l++){
+    for(var k = 0; k < fotos[l].length;k++){
+    	document.getElementById('fotoDetalle'+l+k).style.display = 'none';
+    }
+    document.getElementById('divTitulo'+idContent).style.display = 'none';
+}
+  	document.getElementById('overlay').style.display = 'none';
+
+  	document.getElementById('page').style.display = 'block';
+    window.scrollTo(0,scrollp);
+  }
+
+
+
+  function abrirFbk(){ 
+
+  window.open('https://www.facebook.com/ariel.larriba.7');
+
+}
+
+  function abrirIgm(){
+
+  	window.open('https://www.instagram.com/ariel_larriba_photo_video')
+
+  }
+
+
+  function mostrarTexto(portada){
+    var idPortada = portada.target.id;
+    idPortada = idPortada.substring(14);
+    var textoPortada = document.getElementById('containerTitle'+idPortada);
+   console.log(textoPortada); //Consola muestra el div que busco sin embargo me dice que esa variable está en null
+    textoPortada.style.opacity = '1';
+  }
+
+
+
+  function ocultarTexto(portada){
+    console.log(portada);
+	var idPortada = portada.target.id;
+    console.log(idPortada);
+    idPortada = idPortada.substring(14);
+    console.log('containerTitle'+idPortada+'ocultar');
+   var textoPortada = document.getElementById('containerTitle'+idPortada);
+   console.log(textoPortada); //Consola muestra el div que busco sin embargo me dice que esa variable está en null
+    textoPortada.style.opacity = '0';
+  }
+
+
+
+  function mostrarTextoV(portada){
+    var idPortada = portada.target.id;
+    idPortada = idPortada.substring(14);
+    var textoPortada = document.getElementById('containerTitVi'+idPortada);
+    textoPortada.style.opacity = '1';
+  }
+
+
+
+  function ocultarTextoV(portada){
+	var idPortada = portada.target.id;
+    idPortada = idPortada.substring(14);
+   var textoPortada = document.getElementById('containerTitVi'+idPortada);
+    textoPortada.style.opacity = '0';
+  }
+function Underline(event){
+
+  var menu=event.target.id.substring(4);
+
+  document.getElementById('underline').style.display='block';
+
+  var heightPos=document.getElementById('menu'+menu).offsetHeight;
+
+  var widthPos=document.getElementById('menu'+menu).offsetWidth;
+
+  var leftPos=(document.getElementById('menu'+menu).offsetLeft+widthPos/2-15) +'px';
+
+  var topPos=(document.getElementById('menu'+menu).offsetTop+heightPos-20)+'px';
+
+  document.getElementById('underline').style.left=leftPos;
+
+  document.getElementById('underline').style.top=topPos;
+
+}
+
+//Videos
+
+  //grid de videos
+  var videos=["videos/video1.png","videos/video2.png","videos/video3.png","videos/video4.png", "videos/video5.PNG", "videos/video6.PNG"];
+ 
+for (var i = 0; i < videos.length; i++) {
+  console.log(i);
+  var portada = document.createElement('DIV');
+  portada.className = 'portada';
+  portada.id = 'videoss'+i;
+  portada.style.backgroundImage = 'url(imagenes/'+videos[i]+')';
+  portada.style.backgroundRepeat = 'no-repeat';
+  portada.style.backgroundSize = 'cover';
+  portada.style.height = '180px';
+  portada.setAttribute("onclick","abrirVideo(event)");
+  portada.setAttribute("onmouseover", "mostrarTextoV(event)");
+  portada.setAttribute("onmouseout", "ocultarTextoV(event)");
+  document.getElementById('videos').appendChild(portada);
+  var containerTitle = document.createElement('DIV');
+  containerTitle.setAttribute("onclick","abrirVideo(event)");
+  containerTitle.className = 'containerTitle';
+  containerTitle.style.textAlign = 'center';
+  containerTitle.id = 'containerTitVi'+i;
+  containerTitle.style.textAlign = 'center';
+  portada.appendChild(containerTitle);
+  var playButton = document.createElement('I');
+  playButton.className = 'fa fa-play';
+  playButton.ariaHidden = 'true';
+  playButton.style.color = 'white';
+  playButton.style.display = 'inline-block';
+  playButton.style.fontSize = '0.6em';
+  var nuevoTitulo = document.createElement('P');
+  nuevoTitulo.style.paddingTop = '130px';
+  nuevoTitulo.innerHTML = "PLAY";
+  nuevoTitulo.id = 'contentTexttVi'+i;
+  nuevoTitulo.className = 'contentText1';
+  nuevoTitulo.style.fontWeight ='bold';
+  nuevoTitulo.style.display = 'inline-block';
+  containerTitle.appendChild(playButton);
+  containerTitle.appendChild(nuevoTitulo);
+  //overlay
+  var playerO = document.createElement('OBJECT');
+  playerO.id = 'player'+i;
+  playerO.style.position = 'absolute';
+  playerO.style.zIndex = '1';
+  playerO.style.width = '100%';
+  playerO.style.height = '100%';
+  playerO.style.display = 'none';
+  document.getElementById('videoOverlay').appendChild(playerO);
+}
+//no carga sólo videoId, si no que carga todo el parámetro que le pasa a la función de la api
+var playerInfoList = [
+{width: 640,height:'390',videoId: 'nIZws0lvx0Q',id:'player0',playerVars: {color: 'white',playlist: '',rel:0,playlist: 'nIZws0lvx0Q',controls:2,iv_load_policy:3,loop:1,},events: {onReady: initialize}},
+{width: 640,height:'390',videoId: '2YRbjmVuA4A',id:'player1',playerVars: {color: 'white',playlist: '',rel:0,playlist: '2YRbjmVuA4A',controls:2,iv_load_policy:3,loop:1,},events: {onReady: initialize}},
+{width: 640,height:'390',videoId: 'IWK0B3pQFj8',id:'player2',playerVars: {color: 'white',playlist: '',rel:0,playlist: 'IWK0B3pQFj8',controls:2,iv_load_policy:3,loop:1,},events: {onReady: initialize}},
+{width: 640,height:'390',videoId: '-FBjrOtp7DE',id:'player3',playerVars: {color: 'white',playlist: '',rel:0,playlist: '-FBjrOtp7DE',controls:2,iv_load_policy:3,loop:1,},events: {onReady: initialize}},
+{width: 640,height:'390',videoId: '3PWWv5iJMIY',id:'player4',playerVars: {color: 'white',playlist: '',rel:0,playlist: '3PWWv5iJMIY',controls:2,iv_load_policy:3,loop:1,},events: {onReady: initialize}},
+{width: 640,height:'390',videoId: 'dbYComjA8H8',id:'player5',playerVars: {color: 'white',playlist: '',rel:0,playlist: 'dbYComjA8H8',controls:2,iv_load_policy:3,loop:1,},events: {onReady: initialize}},];
+//Cargo todos los videos al principio, existen los objetos player anónimamente
+
+var curplayer=[];
+var apiready=0;
+      function onYouTubeIframeAPIReady() {
+        apiready=1;
+        if(typeof playerInfoList === 'undefined')
+           return; 
+
+        for(var i = 0; i < playerInfoList.length;i++) {
+          curplayer[i] = createPlayer(playerInfoList[i]);
+        }   
+
+        //video inicial
+        player = new YT.Player('videoInicial', {
+          width: '640',
+          playerVars : {
+            color: 'white',
+            playlist: 'nIZws0lvx0Q',
+            controls:2,
+            iv_load_policy:3,
+            loop:1,
+            },
+          videoId: 'nIZws0lvx0Q',
+          events: {
+            onReady: initialize,
+        }
+        });
+        
+      }
+
+
+function initialize(){
+  player.mute();
+  player.playVideo();
+  player.hi
+}
+
+    
+      function createPlayer(playerInfo) {
+          return new YT.Player(playerInfo.id, {
+             width: playerInfo.width,
+             height: playerInfo.height,
+             videoId: playerInfo.videoId,
+             playerVars: playerInfo.playerVars
+          });//no están instanciados, están anónimos
+      }
+
+function abrirVideo(event){//la idea es poner en "display: block" 
+  capaOverlay=1;
+  var idVid = event.target.id;
+  idVid = idVid.substring(14);
+  console.log(idVid);
+  document.getElementById('videoOverlay').style.display = 'block';
+  document.getElementById('player'+idVid).style.display = 'block';//muestra sólo el div que contiene al video que quiero reproducir
+  console.log(document.getElementById('player'+idVid));
+   //player = new YT.Player('video-placeholder', playerInfoList[idVid])
+}
+
+
+function cerrarVideo(){
+  capaOverlay=0;
+  document.getElementById('videoOverlay').style.display = 'none';
+  for(var i = 0; i < videos.length; i++){
+    document.getElementById('player'+i).style.display = 'none';
+  }
+  for(var i = 0; i < playerInfoList.length; i++){
+     curplayer[i].stopVideo();
+  }
+ 
+  
+}
+
+function abrirVideoInicial(){
+   
+}
+//BACKSTAGE
+var backstageImages = ["_MG_0482_opt.jpg", "_MG_0882_opt.jpg", "_MG_1039_opt.jpg", "_MG_1230_opt.jpg", "_MG_1775_opt.jpg", "_MG_1789_opt.jpg", "_MG_1988_opt.jpg", "_MG_2112_opt.jpg", "_MG_2740_opt.jpg", "_MG_2777_opt.jpg", "_MG_2897_opt.jpg", "_MG_3050_opt.jpg", "_MG_3331_opt.jpg", "_MG_3586_opt.jpg", "_MG_4113_opt.jpg", "_MG_4126_1_opt.jpg", "_MG_4244_opt.jpg", "_MG_5076_opt.jpg", "_MG_5243_opt.jpg", "_MG_7889_opt.jpg", "_MG_7991_opt.jpg", "_MG_8348_opt.jpg", "_MG_8407_opt.jpg", "_MG_8429_opt.jpg", "_MG_9727_opt.jpg", "_MG_9902_opt.jpg", "ANDY_21_opt.jpg", "ANDY_31_opt.jpg", "elegidas_opt.jpg", "franco_casola_3_opt.jpg"];
+for (var i = 0; i < backstageImages.length; i++) {
+  var backstage = document.createElement('DIV');
+  backstage.id = 'backstage'+i;
+  backstage.style.backgroundImage = 'url(imagenes/workArtist_opt/SELECCION_DE_WORK_ARTIST/'+backstageImages[i]+')';
+  backstage.className = 'backstage';
+  backstage.setAttribute("onclick", "abrirBackstage(event)");
+  document.getElementById('backstages').appendChild(backstage);
+}
+var wordActiva=0;
+function abrirBackstage(event){
+  var topDiv = document.getElementById(event.target.id).offsetTop + 'px';
+  
+  document.getElementById(event.target.id).style.top = topDiv;
+  var idBckstg = event.target.id;
+  idBckstg = idBckstg.substring(9);
+  wordActiva=idBckstg;
+  document.getElementById('overlayBackstage').style.display = 'block';
+  document.getElementById('backstageExpandida').src = 'imagenes/workArtist_opt/SELECCION_DE_WORK_ARTIST/'+backstageImages[idBckstg];
+  var pantalla=tamVentana();
+  document.getElementById('backstageExpandida').style.height='auto';
+  document.getElementById('backstageExpandida').style.width='95%';
+
+  if(parseInt(document.getElementById('backstageExpandida').offsetHeight)>pantalla[1]){
+    document.getElementById('backstageExpandida').style.width='auto';
+    document.getElementById('backstageExpandida').style.height='98vh';
+  }
+}
+
+function next(nn){
+  wordActiva=parseInt(wordActiva)+nn;
+  if(wordActiva<0){wordActiva=backstageImages.length-1}
+    if(wordActiva>backstageImages.length-1){wordActiva=0}
+  document.getElementById('backstage'+wordActiva).click();
+}
+function cerrarOverlayBackstage(){
+  document.getElementById('overlayBackstage').style.display = 'none';
+} 
+
+
+/// BACK
+
+var backImages = ["yo1.jpg","yo2.jpg","yo3.jpg","yo4.jpg","yo5.jpg","yo6.jpg","yo7.jpg","yo8.jpg","yo9.jpg","yo10.jpg","yo11.jpg","yo12.jpg","yo13.jpg","yo14.jpg","yo15.jpg","yo16.jpg","yo30.jpg","yo18.jpg","yo19.jpg","yo20.jpg","yo21.jpg","yo22.jpg","yo23.jpg","yo24.jpg","yo25.jpg","yo26.jpg","yo27.jpg","yo28.jpg","yo29.jpg","yo17.jpg"];
+for (var i = 0; i < backImages.length; i++) {
+  var backstage = document.createElement('DIV');
+  backstage.id = 'backstagg'+i;
+  backstage.style.backgroundImage = 'url(imagenes/yo_opt/'+backImages[i]+')';
+  backstage.className = 'backstage';
+  backstage.setAttribute("onclick", "abrirBack(event)");
+  document.getElementById('backs').appendChild(backstage);
+}
+var backActiva=0;
+function abrirBack(event){
+  var topDiv = document.getElementById(event.target.id).offsetTop + 'px';
+  
+  document.getElementById(event.target.id).style.top = topDiv;
+  var idBckstg = event.target.id;
+  idBckstg = idBckstg.substring(9);
+  backActiva=idBckstg;
+  document.getElementById('overlayBack').style.display = 'block';
+  document.getElementById('backstageExpandidaBack').src = 'imagenes/yo_opt/'+backImages[idBckstg];
+   var pantalla=tamVentana();
+  document.getElementById('backstageExpandidaBack').style.height='auto';
+  document.getElementById('backstageExpandidaBack').style.width='95%';
+
+  if(parseInt(document.getElementById('backstageExpandidaBack').offsetHeight)>pantalla[1]){
+    document.getElementById('backstageExpandidaBack').style.width='auto';
+    document.getElementById('backstageExpandidaBack').style.height='98vh';
+  } 
+}
+function cerrarOverlayBack(){
+  document.getElementById('overlayBack').style.display = 'none';
+} 
+
+function nextB(nn){
+  backActiva=parseInt(backActiva)+nn;
+  if(backActiva<0){backActiva=backImages.length-1}
+    if(backActiva>backImages.length-1){backActiva=0}
+  document.getElementById('backstagg'+backActiva).click();
+}
+
+var menu=0;
+function AbrirMenuRes(){
+	if (menu==0){
+		document.getElementById('divMenu').style.display='block';
+		menu=1;
+	}else{
+		document.getElementById('divMenu').style.display='none';
+		menu=0;
+	}
+}
+
+function Home(){
+  window.scrollTo(0,0);
+}
+
+function tamVentana() {
+  var tam = [0, 0];
+  if (typeof window.innerWidth != 'undefined')
+  {
+    tam = [window.innerWidth,window.innerHeight];
+  }
+  else if (typeof document.documentElement != 'undefined'
+      && typeof document.documentElement.clientWidth !=
+      'undefined' && document.documentElement.clientWidth != 0)
+  {
+    tam = [
+        document.documentElement.clientWidth,
+        document.documentElement.clientHeight
+    ];
+  }
+  else   {
+    tam = [
+        document.getElementsByTagName('body')[0].clientWidth,
+        document.getElementsByTagName('body')[0].clientHeight
+    ];
+  }
+  return tam;
+}
+
+</script>
 </html>
+
+
+
+
+
+
+
