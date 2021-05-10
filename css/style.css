@@ -24,12 +24,12 @@ body {
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position:center;
+    background-position:50% 50%;
     background-image: url(../images/main-image.jpg); 
 }
 .divopacity{
     background: rgba(0,0,0,0.3);
-    widows: 100%;
+    width: 100%;
     height: 100%;
 }
 .mainimage1{
@@ -39,6 +39,8 @@ body {
     background-repeat: no-repeat;
     background-position:center;
     background-image: url(../images/main-image1.jpg); 
+    transition: 2s;
+    transition-timing-function: ease-in-out;
 }
 .maintitle{
     width: 100%;
@@ -135,6 +137,8 @@ body {
 .imageNosotros{
     color: white;
     width: 60%;
+    transition: 2s;
+    transition-timing-function: ease-in-out;
 }
 
 .imagePrecios{
@@ -145,6 +149,8 @@ body {
     background-repeat: no-repeat;
     background-position:center;
     background-image: url(../images/precios.jpg);    
+    transition: 2s;
+    transition-timing-function: ease-in-out;
 }
 .list{
     display: block;
@@ -203,6 +209,7 @@ body {
     color: black;
     border: solid 1px black;
     line-height: 1.35;
+    cursor: pointer;
 }
 .boton1:hover{
     background-color: #f5f5f5 !important;
@@ -212,24 +219,93 @@ body {
    margin: 30px 0px;
   
 }
+
+#overlay {
+    background-color: rgba(0,0,0,0.8);
+    position: fixed;
+    text-align: center;
+    display: none;
+    width: 100%;
+    height: 100vh;
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+}
+.siguienteOverlay{
+    position: absolute;
+    top: 50vh;
+    opacity: 0.5;
+    padding: 10px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    margin: 0px;
+    font-weight: lighter;
+    transform: scaleY(1.5);
+}
+.siguienteOverlay:hover{
+    opacity: 1;
+}
+.nextR{
+    left: 95%;
+}
+.bacVerticalAlign{
+    width: 1px;
+    height: 96vh;
+    margin-top: 4vh;
+    display: inline-block;
+    vertical-align: middle;
+}
+.fotoExpandida{
+    vertical-align:middle;
+    display: inline-block;
+    max-width: 90%;
+    cursor:pointer;
+    z-index: 1000;
+    margin-top: 1vh;
+}
+.cerrarOverlayB{
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    right: 40px;
+    position: relative;
+    float: right;
+    margin: 0px;
+    top: 10px;
+    font-weight: lighter;
+    opacity: 0.5;
+}
+.cerrarOverlayB:hover{
+    opacity: 1;
+}
+
 /* footer */
 footer{
     color: white;
 }
 .cuadro-form{
     display: inline-block;
+    vertical-align: top;
 }
 .datos-form{
     display: inline-block;
+    vertical-align: top;
 }
 .data1{
-    /* display: inline-block; */
+    margin-top: 20px;
+    text-align: center;
 }
 .text4{
-    display: inline-block;
+    display: block;
+    font-weight: 800;
+    font-size: 1.2em;
 }
 .contacto{
     background-color:#828282;
+    padding: 30px 0px;
 }
 .textarea{
     height: 180px;
@@ -243,9 +319,12 @@ footer{
     height: 30px;
     resize: none;
     width: 90%;
-    /* margin-left: auto; */
+    height: 45px;
+    color: #9f3535;
+    font-weight: bold;
     margin-right: auto;
     display: block;
+    padding: 10px;
 }
 .bot-env-p{
     font-size: 1.2em;
@@ -255,23 +334,104 @@ footer{
     text-align: center;
     padding: 2px;
 }
+.div_icono_container{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #9f3535;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+.icon{
+    line-height: 50px!important;
+    font-size: 1.2em;
+    color: white;
+}
 .correo-footer{
     display: inline-block;
-    width: 30%;
+    width: 40%;
+    text-align: left;
 }
 .tel-footer{
     display: inline-block;
-    width: 30%;
+    width: 40%;
+    text-align: left;
 }
 .redes-footer{
     display: inline-block;
-    width: 30%;
+    width: 10%;
     align-items: flex-end;
 }
+input , textarea{
+    outline: none;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #9f3535;
+  font-weight: bold; /* Firefox */
+}
 
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #9f3535;
+  font-weight: bold;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #9f3535;
+  font-weight: bold;
+}
 /* footer */
-@media (max-width: 1024px)
-.backstage {
-    width: 20vw;
+@media (max-width: 1024px){
+    .maintitle{
+        transform: translateY(-100px);
+    }
+    .text1{
+        width: 95%;
+    }
+    .pp1{
+        text-align: center!important;
+    }
+    .title1 {
+        font-size: 3rem;
+    }
+    .imageNosotros{
+        width: 90% !important;
+    }
+    .text3{
+        width: 90%;
+    }
+    .grid{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .backstage {
+    width: 100%!important;
     height: 150px;
+    }
+    .cuadro-form{
+        width: 100%!important;
+    }
+    .Entrada{
+        margin: auto;
+    }
+    .data2{
+        width: 100%!important;
+    }
+    .correo-footer{
+        width: 90%;
+        margin-bottom: 30px
+    }
+    .tel-footer{
+        width: 90%;
+        margin-bottom: 30px;
+    }
+    .div_tel{
+        width: 60%;
+    }
+    .redes-footer{
+        width: 90%
+    }
+    .nextR{
+        left: 90%;
+    }
 }

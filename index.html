@@ -19,12 +19,12 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/v4-shims.css">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 </head>
-<body>
+<body onload="loadFunction()">
     <!-- MAIN -->
     <main>
-        <div class="mainimage">
+        <div class="mainimage" id="mainimage">
             <div class="divopacity">
-                <div class="maintitle">
+                <div class="maintitle" id="maintitle">
                     <h1 class="title">Grupo Vaieretti</h1>
                     <p class="subtitle">DESARROLLOS INMOBILIARIOS</p>
                 </div>
@@ -34,23 +34,23 @@
     <!-- NOSOTROS -->
     <section class="nosotros">
         <div class="jumbotron" style="margin-bottom: 0px;" >
-            <div class="text1">
+            <div class="text1" id="textoNostros0">
                 <h2 class="title1">Construí con todo. Y todo al mejor precio.</h2>
                 <p class="pp1">Proyectamos futuro, construimos nuevos sueños. Con todo lo que se necesita para llevar adelante la construcción.</p>
             </div>
         </div>
-        <div style="text-align: center;">
-            <img class="imageNosotros" src="./images/nosotros.jpg">
+        <div style="text-align: center; overflow-y: hidden;" id="imageNosotros_container0">
+            <img class="imageNosotros" src="./images/nosotros.jpg" id="imageNosotros0" style="opacity:0; margin-top: 100px; margin-bottom: -100px">
         </div>
     </section>
     <!-- PRECIOS -->
     <section class="precios">
         <div class="jumbotron">
-            <div class="text1">
+            <div class="text1" id="textoNostros1">
                     <h2 class="title1">Precios directos sin intermediarios.</h2>
             </div>
-        </div>
-        <div class="imagePrecios"></div>
+        </div style="text-align: center; overflow-y: hidden;" id="imageNosotros_container1">
+        <div class="imagePrecios" id="imageNosotros1" style="opacity:0; margin-top: 100px; margin-bottom: -100px" ></div>
     </section>
     <!-- COMPROMISO -->
     <section class="">
@@ -71,26 +71,15 @@
     </section>
     <!-- GALERIA DE IMAGENES -->
     <section class="imageGallery">
-        <!-- <div>
-            grid de imagenes con flexbox
-            <div class="overlayBackstage" id="overlayBackstage" style="display: none;">
-                    <p class="siguienteOverlay" onclick="next(-1)" style="left: 3%">&lt;</p>
-                    <p class="siguienteOverlay nextR" onclick="next(1)">&gt;</p>
-                    <div class="bacVerticalAlign"></div>
-                    <div class="backstageExpandida" onclick="cerrarOverlayBackstage()">
-                      <p class="cerrarOverlayB" onclick="cerrarOverlayBackstage()">x</p>
-                    <img id="backstageExpandida" src="" style="height: auto; width: 95%;">
-                   </div>
-            </div> -->
                 <div class="imagesPortadas" id="backstages">
                     <div class="grid">
-                        <div id="backstage0" class="backstage" onclick="abrirBackstage(event)" style="background-image: url(./images/grid1.jpg);"></div>
-                        <div id="backstage1" class="backstage" onclick="abrirBackstage(event)" style="background-image: url(./images/grid2.jpg);"></div>
-                        <div id="backstage2" class="backstage" onclick="abrirBackstage(event)" style="background-image: url(./images/grid3.jpg);"></div>
-                        <div id="backstage3" class="backstage" onclick="abrirBackstage(event)" style="background-image: url(./images/grid4.jpg);"></div>
-                        <div id="backstage4" class="backstage" onclick="abrirBackstage(event)" style="background-image: url(./images/grid5.jpg);"></div>
-                        <div id="backstage5" class="backstage" onclick="abrirBackstage(event)" style="background-image: url(./images/grid6.jpg);"></div>
-                        <div id="backstage6" class="backstage" onclick="abrirBackstage(event)" style="background-image: url(./images/grid7.jpg); width: 100%; height:50vh;"></div>
+                        <div id="backstage0" class="backstage" onclick="abrirFoto(event)" style="background-image: url(./images/grid1.jpg);"></div>
+                        <div id="backstage1" class="backstage" onclick="abrirFoto(event)" style="background-image: url(./images/grid2.jpg);"></div>
+                        <div id="backstage2" class="backstage" onclick="abrirFoto(event)" style="background-image: url(./images/grid3.jpg);"></div>
+                        <div id="backstage3" class="backstage" onclick="abrirFoto(event)" style="background-image: url(./images/grid4.jpg);"></div>
+                        <div id="backstage4" class="backstage" onclick="abrirFoto(event)" style="background-image: url(./images/grid5.jpg);"></div>
+                        <div id="backstage5" class="backstage" onclick="abrirFoto(event)" style="background-image: url(./images/grid6.jpg);"></div>
+                        <div id="backstage6" class="backstage" onclick="abrirFoto(event)" style="background-image: url(./images/grid7.jpg); width: 52vw; height:50vh;"></div>
                     </div>
                 </div>
         <div>
@@ -105,20 +94,24 @@
     </div>
     <!-- CONTA CON VAIERETT -->
     <section>
-        <div class="text1">
-            <h2 class="title1">Contá con Vaieretti, contá <br>con todo.</h2>
+        <div class="text1" id="textoNostros2">
+            <h2 class="title1">Contá con Vaieretti, contá con todo.</h2>
             <p class="text3" style="width: 95%;"><strong>Desde los cimientos hasta los muebles de tu futura casa.</strong></p>
         </div>
-        <div class="imagePrecios" style="background-image: url(./images/imagen1.png); margin: 50px 0px"></div>
+        <div style="text-align: center; overflow-y: hidden; margin: 50px 0px" id="imageNosotros_container2">
+            <div class="imagePrecios" id="imageNosotros2" style="background-image: url(./images/imagen1.png); opacity:0; margin-top: 100px; margin-bottom: -100px"></div>
+        </div>
     </section>
 <!-- galeria de imagenes -->
 <section>
     <div class="jumbotron" style="margin-bottom: 0px;">
-        <p class="text3">Con la misión fundamental de lograr "clientes contentos", <strong>trabajamos junto a un equipo altamente especializado en brindar un servicio integral.</strong> Capaz de dar soluciones en cada etapa de la construcción.</p>
+        <p class="text3" id="textoNostros3">Con la misión fundamental de lograr "clientes contentos", <strong>trabajamos junto a un equipo altamente especializado en brindar un servicio integral.</strong> Capaz de dar soluciones en cada etapa de la construcción.</p>
     </div>
-    <div class="mainimage1" style="margin-top: 50px">
+    <div style="text-align: center; overflow-y: hidden; margin-top: 50px" id="imageNosotros_container3">
+        <div class="mainimage1" id="imageNosotros3" style="opacity:0; margin-top: 100px; margin-bottom: -100px">
     </div>
-    <div class="list text3" style="margin-top: 40px;">
+    </div>
+    <div class="list text3" id="textoNostros4" style="margin-top: 40px;">
             <ul>
                 <li><p>Ingeniería y diseño</p></li>
                 <li><p>Planteo, coordinación y control de obras civiles</p></li>
@@ -126,10 +119,10 @@
                 <li><p>Asesoramiento</p></li>
             </ul>
     </div>
-    <div style="text-align: center;">
-            <img src="./images/camion.jpg" class="imageNosotros">
-        </div>
-        <div class="text1">
+    <div style="text-align: center;overflow-y: hidden;" id="imageNosotros_container4">
+            <img src="./images/camion.jpg" id="imageNosotros4" class="imageNosotros" style="opacity:0; margin-top: 100px; margin-bottom: -100px">
+    </div>
+        <div class="text1" id="textoNostros5">
                 <h2 class="title1">Avancemos juntos.</h2>
                 <p class="text3" style="width: 100%;"><strong>Dá un paso adelante. Solicitá cotización de materiales, servicios y financiación.</strong></p>
             </div>
@@ -138,13 +131,13 @@
                             <input type="submit" class="boton1" value="Enviá tu consulta" onclick="Enviar()">
                     </div>
                 </div>
-                <div style="text-align: center;">
-                    <img src="./images/logo.png" class="imageNosotros" style="width: auto">
+                <div style="text-align: center; overflow-y: hidden;" id="imageNosotros_container5">
+                    <img src="./images/logo.png" class="imageNosotros" id="imageNosotros5" style="width: auto; opacity:0; margin-top: 100px; margin-bottom: -100px">
                 </div>
 
 </section>
 <footer class="contacto img-footer" style="width: 100%;">
-        <h2 class="titulo2" id="contacto">Contactenos</h2>
+
     <div class="cuadro-form" style="width: 60%;">
         <textarea class="Entrada textarea" placeholder=" Consulta:" id="entrada5"
             style="height: 180px; resize: none;"></textarea>
@@ -156,68 +149,125 @@
         <input type="mail" class="Entrada text" id="entrada3" placeholder=" E-mail:">
         <div style="text-align: right;">
             <div class="bot-env">
-                <p class="bot-env-p Entrada">Enviar</p>
+                <p class="bot-env-p Entrada" style="line-height: 40px">Enviar</p>
             </div>
         </div>
     </div>
     <div class="data1" id="bloque5">
         <div class="correo-footer">
+            <div class="div_icono_container">
+                <i class="fas fa-envelope icon"></i>
+            </div>
+            <div style="display: inline-block;vertical-align: middle; margin-left: 10px">
                 <p class="text4">E-mail:</p>
                 <p class="text4">vaierettiyasociados@gmail.com</p>
+            </div>
+                
         </div>
         <div class="tel-footer">
+            <div class="div_icono_container">
+                <i class="fas fa-phone icon"></i>
+            </div>
+            <div style="display: inline-block;vertical-align: middle; margin-left: 10px" class="div_tel">
                 <p class="text4">Teléfonos:</p>
-                <p class="text4">+54 9 261 3463333</p>
-                <p class="text4">+54 9 261 5105171</p>
+                <p class="text4">+54 9 261 3463333 ó 261 5105171</p>
+            </div>
         </div>
         <div class="redes-footer">
                 <div class="redes">
-                    <a href="https://www.facebook.com"><i class="fab fa-facebook responsive4" style="display: inline-block; font-size: 1.5em; cursor: pointer; color:white"></i></a>
-                    <a href="https://www.instagram.com"><i class="fab fa-instagram responsive4" style="display: inline-block; font-size: 1.5em; cursor: pointer; color:white"></i></a>
+                    <a href="https://www.facebook.com"><i class="fab fa-facebook responsive4" style="display: inline-block; font-size: 2em; cursor: pointer; color:white; margin: 0px 10px"></i></a>
+                    <a href="https://www.instagram.com"><i class="fab fa-instagram responsive4" style="display: inline-block; font-size: 2em; cursor: pointer; color:white; margin: 0px 10px"></i></a>
                 </div>
         </div> 
     </div>
 
 </footer>
 
+<div id="overlay" class="overlay">
+    <p class="cerrarOverlayB" onclick="cerrarOverlay()">x</p>
+    <p class="siguienteOverlay" onclick="next(-1)" style="left: 3%"><</p>
+    <p class="siguienteOverlay nextR" onclick="next(1)">></p>
+    <div class="bacVerticalAlign"></div>
+    <div class="fotoExpandida" onclick="cerrarOverlay()">
+        <img  id="backstageExpandida" src="">
+    </div>
+</div>
+
 
 </body>
 <script>
 
-var scrollp=0;
-  function abrirFoto(event){
-    capaOverlay=1;
-  	idContent = event.target.id;
-    console.log(idContent+'idContent')
-  	idContent = idContent.substring(14);
-  	console.log(idContent+'idContent');
-    scrollp = window.scrollY;
-  	document.getElementById('overlay').style.display = 'block';
-    window.scrollTo(0,0);
-  	document.getElementById('page').style.display = 'none';
-
-  	for (var i = 0;i<fotos[idContent].length;i++) {
-
-  		document.getElementById('fotoDetalle'+idContent+i).style.display = 'block';
-  	}
-  	document.getElementById('divTitulo'+idContent).style.display = 'block';
-
-  }
-
-  function cerrarOverlay(){
-    capaOverlay=0;
-  	for(var l = 0; l < fotos.length; l++){
-    for(var k = 0; k < fotos[l].length;k++){
-    	document.getElementById('fotoDetalle'+l+k).style.display = 'none';
+function loadFunction(){
+    for(x=0;x<6;x++){
+        var height_nosotros = document.getElementById('imageNosotros'+x).offsetHeight + "px";
+        document.getElementById('imageNosotros_container'+x).style.height = height_nosotros;
     }
-    document.getElementById('divTitulo'+idContent).style.display = 'none';
 }
-  	document.getElementById('overlay').style.display = 'none';
 
-  	document.getElementById('page').style.display = 'block';
-    window.scrollTo(0,scrollp);
-  }
+var fotoActiva=0;
+function abrirFoto(event){
+  var topDiv = document.getElementById(event.target.id).offsetTop + 'px';
+  
+  document.getElementById(event.target.id).style.top = topDiv;
+  var idBckstg = event.target.id;
+  idBckstg = idBckstg.substring(9);
+  fotoActiva=idBckstg;
+  document.getElementById('overlay').style.display = 'block';
+  var longitud = document.getElementById(event.target.id).style.backgroundImage.length;
+  var imagenBack=document.getElementById(event.target.id).style.backgroundImage.substring(5,longitud-2);
+  console.log(imagenBack)
+  document.getElementById('backstageExpandida').src = imagenBack;
+ // var pantalla=tamVentana();
+  document.getElementById('backstageExpandida').style.height='auto';
+  document.getElementById('backstageExpandida').style.width='95%';
 
+ // if(parseInt(document.getElementById('backstageExpandida').offsetHeight)>pantalla[1]){
+   // document.getElementById('backstageExpandida').style.width='auto';
+   // document.getElementById('backstageExpandida').style.height='98vh';
+ // }
+}
+function next(nn){
+  fotoActiva=parseInt(fotoActiva)+nn;
+  if(fotoActiva<0){fotoActiva=6}
+    if(fotoActiva>6){fotoActiva=0}
+  document.getElementById('backstage'+fotoActiva).click();
+}
+function cerrarOverlay(){
+  document.getElementById('overlay').style.display = 'none';
+} 
+
+window.addEventListener('scroll', Scroll);
+var animation=[false, false, false, false, false, false, false];
+var scrolltexto = [250, 350, 300, 350, 300, 250];
+
+function Scroll(){
+   const currentScroll = window.scrollY; 
+   //texto inicial
+   if(currentScroll<250){
+    toppx = (currentScroll*0.08+40)+"vh";
+    posImg = "50% "+(currentScroll*0.08+50)+"%";
+    document.getElementById('maintitle').style.marginTop = toppx;
+    document.getElementById('mainimage').style.backgroundPosition = posImg;
+   }
+   for(x=0;x<6;x++){
+    var scrollText = document.getElementById('textoNostros'+x).offsetTop-scrolltexto[x];
+    if(currentScroll>scrollText ){
+        if(!animation[x]){
+            document.getElementById('imageNosotros'+x).style.opacity=1;
+            document.getElementById('imageNosotros'+x).style.marginTop="0px";
+            document.getElementById('imageNosotros'+x).style.marginBottom="0px";
+            animation[x]=true;
+        }
+    } else{
+        if(animation[x]){
+            document.getElementById('imageNosotros'+x).style.opacity=0;
+            document.getElementById('imageNosotros'+x).style.marginTop="100px";
+            document.getElementById('imageNosotros'+x).style.marginBottom="-100px";
+            animation[x]=false;
+        }
+    }
+   }
+}
 
 
 </script>
