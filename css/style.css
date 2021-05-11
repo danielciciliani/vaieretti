@@ -89,6 +89,12 @@ body {
     margin-bottom: 40px;
     font-size: 0.9em;
 }
+.pp_strong{
+    width: 60%!important;
+    color: white!important; 
+    font-weight: 400 !important; 
+    display: inline-block!important;
+}
 .text1{
     display: block;
     margin-left: auto;
@@ -469,5 +475,11 @@ input , textarea{
     }
     .Flotante{
         left: 85%;
+    }
+    .pp_strong{
+        width: 95%!important;
+        color: white!important; 
+        font-weight: 400 !important; 
+        display: inline-block!important;
     }
 }

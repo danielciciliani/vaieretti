@@ -8,7 +8,7 @@
     <meta name="keywords" content="Grupo Vaieretti">
     <meta name="author" content="">
     <title>Vaieretti Desarrollos Inmobiliarios</title>   
-    <link rel="stylesheet" href="./css/style.css?v=0.1">
+    <link rel="stylesheet" href="./css/style.css?v=0.3">
     <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
@@ -34,35 +34,41 @@
     <!-- NOSOTROS -->
     <section class="nosotros">
         <div class="jumbotron" style="margin-bottom: 0px;" >
-            <div class="text1" id="textoNostros0">
-                <h2 class="title1" style="background: #f10000;color: white;padding: 5px; font-weight: 400">Construí con todo. Y todo al mejor precio.</h2>
-                <p class="pp1"><span style="color: #f10000; font-weight: bold">Proyectamos futuro, construimos nuevos sueños.</span> Con todo, absolutamente todo, lo que se necesita para llevar adelante una construcción.</p>
+            <div style="background: #f10000;padding: 5px;">
+                <h2 class="title1 pp_strong" >Construí con todo. Y todo al mejor precio.</h2>
+            </div>
+            
+            <div class="text1" id="textoNostros0" style="margin-top: 50px">
+                <p class="pp1"><span style="color: #f10000; font-weight: bold;">Proyectamos futuro, construimos nuevos sueños.</span> Con todo, absolutamente todo, lo que se necesita para llevar adelante una construcción.</p>
             </div>
         </div>
         <div style="text-align: center; overflow-y: hidden;" id="imageNosotros_container0">
-            <img class="imageNosotros" src="./images/nosotros.jpg" id="imageNosotros0" style="opacity:0; margin-top: 100px; margin-bottom: -100px">
+            <img class="imageNosotros" src="./images/nosotros.jpg" id="imageNosotros0" >
         </div>
     </section>
     <!-- PRECIOS -->
-    <section class="precios">
+    <section class="precios" style="margin-top: 50px">
+        <div  id="textoNostros1" style="background: #f10000;color: white;padding: 5px; text-align: center;">
+            <h2 class="title1 pp_strong">Precios directos sin intermediarios.</h2>
+        </div>
         <div class="jumbotron">
-            <div class="text1" id="textoNostros1">
-                    <h2 class="title1" style="background: #f10000;color: white;padding: 5px; font-weight: 400">Precios directos sin intermediarios.</h2>
-            </div>
-        </div style="text-align: center; overflow-y: hidden;" id="imageNosotros_container1">
-        <div class="imagePrecios" id="imageNosotros1" style="opacity:0; margin-top: 100px; margin-bottom: -100px" ></div>
+        <div style="text-align: center; overflow-y: hidden;" id="imageNosotros_container1">
+            <div class="imagePrecios" id="imageNosotros1" style="opacity:0; margin-top: 100px; margin-bottom: -100px" ></div>
+        </div>
+        </div>
     </section>
     <!-- COMPROMISO -->
     <section class="">
         <div class="jumbotron" style="margin: 50px 0px;">
-            <p class="text3"><span style="color: #f10000; font-weight: bold">Nuestro compromiso es edificar confianza, es construir solidez.</span> Y ofrecer soluciones para una vivienda 100% de material, 100% terminada <span style="font-weight: bold">¿Necesitás hormigón? Te vendemos hormigón ¿Necesitás ladrillos? Te ofrecemos ladrillos. Podés comprar solo lo que necesitás o podés comprarnos todo lo que te haga falta para construir.</span> Y todo, siempre lo vas a tener al mejor precio. Grupo Vaieretti te ofrece:</p>
+            <p class="text3"><span style="color: #f10000; font-weight: bold">Nuestro compromiso es edificar confianza, es construir solidez.</span> Y ofrecer soluciones para una vivienda 100% de material, 100% terminada.</p>
+            <p class="text3" style="margin-top: 30px"><span style="font-weight: bold">¿Necesitás hormigón? Te vendemos hormigón ¿Necesitás ladrillos? Te ofrecemos ladrillos. Podés comprar solo lo que necesitás o podés comprarnos todo lo que te haga falta para construir.</span> Y todo, siempre lo vas a tener al mejor precio. Grupo Vaieretti te ofrece:</p>
              
             <div class="list text3">
                 <ul>
                     <li><p style="font-weight: bold;">Fábrica de hormigón elaborado.</p></li>
-                    <li><p>Planta de áridos de anchoris.</p></li>
+                    <li><p style="font-weight: bold;">Planta de áridos de anchoris.</p></li>
                     <li><p style="font-weight: bold;">Fábrica de ladrillos.</p></li>
-                    <li><p>Taller metalúrgico propio.</p></li>
+                    <li><p style="font-weight: bold;">Taller metalúrgico propio.</p></li>
                     <li><p style="font-weight: bold;">Fábrica de aberturas de aluminio, DVH.</p></li>
                     <li><p style="font-weight: bold;">Fábrica de amoblamientos de cocina y dormitorio.</p></li>
                 </ul>
@@ -202,7 +208,7 @@
 <script>
 
 function loadFunction(){
-    for(x=0;x<6;x++){
+    for(x=1;x<6;x++){
         var height_nosotros = document.getElementById('imageNosotros'+x).offsetHeight + "px";
         document.getElementById('imageNosotros_container'+x).style.height = height_nosotros;
     }
@@ -253,7 +259,7 @@ function Scroll(){
     document.getElementById('maintitle').style.marginTop = toppx;
     document.getElementById('mainimage').style.backgroundPosition = posImg;
    }
-   for(x=0;x<6;x++){
+   for(x=1;x<6;x++){
     var scrollText = document.getElementById('textoNostros'+x).offsetTop-scrolltexto[x];
     if(currentScroll>scrollText ){
         if(!animation[x]){
